@@ -5,7 +5,7 @@ A stock analytics dashboard built with **DuckDB**, **Python**, and **Streamlit**
 
 ---
 
-## 🗂 Project Structure
+##  Project Structure
 
 ```
 project/
@@ -24,7 +24,7 @@ project/
 
 ---
 
-## ⚙️ Setup
+##  Setup
 
 ### 1. Install dependencies
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Run in Order
+##  Run in Order
 
 ### Step 1 — Download stock data
 
@@ -72,7 +72,7 @@ Open **http://localhost:8501** in your browser.
 
 ---
 
-## 📊 Dashboard Sections & DuckDB Internals Mapping
+##  Dashboard Sections & DuckDB Internals Mapping
 
 Each section of the dashboard is explicitly linked to a DuckDB internal feature — this satisfies the DSCI 551 Phase 3 mapping requirement.
 
@@ -91,7 +91,7 @@ Every section in the dashboard includes an expandable **"🔬 DuckDB Internals"*
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 ```sql
 CREATE TABLE stock_data (
@@ -107,7 +107,7 @@ CREATE TABLE stock_data (
 
 ---
 
-## 🔬 DuckDB Internals Summary
+##  DuckDB Internals Summary
 
 | Concept | How It's Used in This Project |
 |---|---|
@@ -119,7 +119,7 @@ CREATE TABLE stock_data (
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 | Package | Purpose |
 |---|---|
@@ -131,7 +131,7 @@ CREATE TABLE stock_data (
 
 ---
 
-## ⚠️ Notes
+##  Notes
 
 - Re-running `2_load_duckdb.py` is safe — it clears existing rows before reloading (`DELETE FROM stock_data`).
 - The dashboard uses a **cached read-only DuckDB connection** (`@st.cache_resource`) so queries are fast across Streamlit reruns.
