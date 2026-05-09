@@ -129,7 +129,11 @@ CREATE TABLE stock_data (
 | `streamlit` | Interactive web dashboard |
 | `plotly` | Interactive charts (candlestick, bar, line) |
 
+
 ---
+
+# Secret Keys and Credentials
+No API keys are required. The project utilizes the yfinance library, which scrapes publicly available data from Yahoo Finance without requiring an authenticated API token.
 
 ##  Notes
 
